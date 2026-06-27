@@ -1,0 +1,204 @@
+.sidebar-icon{
+    color: white;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 110px 10px;
+    background: black;
+    backdrop-filter: blur(6px);
+    position:fixed;
+    left:0;
+    top:0;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: #0f0f0f;
+}
+
+.browse-main {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+}
+
+.browse-section {
+    flex: 1;
+    min-height: 100vh;
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(0,0,0,0) 65%,
+            rgba(15,15,15,.4) 80%,
+            #0f0f0f 100%
+        ),
+        linear-gradient(
+            to right,
+          rgba(0,0,0,1) 0%,
+          rgba(0,0,0,0.9) 12%,
+          rgba(0,0,0,0.6) 22%,
+          rgba(0,0,0,0.2) 35%,
+          rgba(0,0,0,0) 45%
+        ),
+        url("../images/stranger-cats.png");
+    margin-left:30px;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-banner {
+    height: 82vh;
+    display: flex;
+    align-items: center;
+}
+
+.rank {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.top-badge {
+    width: 30px;
+    height: 36px;
+    background: #E50914;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+}
+
+.top-badge span:first-child {
+    font-size: 8px;
+    font-weight: bold;
+}
+
+.top-badge span:last-child {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.rank p {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.series {
+    color:#d7d7d7;
+    font-size:1rem;
+    letter-spacing:6px;
+    text-transform:uppercase;
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.series-logo {
+    color: #E50914;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.hero-title {
+    font-family: "Bebas Neue", serif; 
+    font-size: 5.5rem;
+    line-height: 0.85;
+    margin:12px 0 20px;
+    color:white;
+}
+
+.hero-content{
+    max-width:520px;
+    margin-left:70px;
+    display:flex;
+    flex-direction: column;
+
+}
+
+.hero-description{
+    color:#b3b0b0;
+    font-size:1.1rem;
+    line-height:1.6;
+    width: 90%;
+    font-family: "Roboto", sans-serif;
+}
+
+.rank > p.top-10 {
+    color: #ffffff !important;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.trending-now-heading {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: "Roboto", sans-serif;
+}
+
+.trending-now-section {
+    width: 520px;
+    margin-left: 80px;
+    align-self: center;
+}
+
+.trending-now-container {
+    display: flex;
+    gap: 18px;
+}
+
+.trending-now-card {
+    width: 140px;
+    height: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform .3s ease;
+    flex-shrink: 0;
+}
+
+.trending-now-card:hover {
+    transform: scale(1.08);
+}
+
+.trending-now-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.play-btn {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.info-btn {
+    background-color: rgba(109, 109, 110, 0.7);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: bold;
+    margin-left: 10px;
+}
