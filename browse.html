@@ -10,10 +10,10 @@
 <body>
     <main class="browse-main">
         <aside class="sidebar">
-            <a href="#">
+            <a href="#search">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search-icon lucide-search sidebar-icon"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
             </a>
-            <a href="#">
+            <a href="#home">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-house-icon lucide-house sidebar-icon"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
             </a>
             <a href="#">
@@ -36,7 +36,10 @@
             </a>
         </aside>
         <section class="browse-section">
-            <div class="hero-banner">
+            <div class="hero-banner" id="home">
+                <div class="search-container" id="search">
+                    <input type="text" class="search-input" id="search-input" placeholder="Search Catflix..."/>
+                </div>
                 <div class="hero-content">
                     <p class="series"> <span class="series-logo"> C </span> series </p>
                     <h1 class="hero-title"> STRANGER <br> CATS </h1>
@@ -54,32 +57,63 @@
                     </div>
                 </div>
             </div>
-            <div class="trending-now-section">
-                    <h2 class="trending-now-heading"> Trending Now </h2>
-                    <div class="trending-now-container">
-                        <div class="trending-now-card">
-                            <img src="images/catman.png" alt="catman" class="trending-now-img">
-                        </div>
-                        <div class="trending-now-card">
-                            <img src="images/mission-impawsible.png" alt="mission-impawsible" class="trending-now-img">
-                        </div>
-                        <div class="trending-now-card">
-                            <img src="images/the-meowtrix.png" alt="the-meowtrix" class="trending-now-img">
-                        </div>
-                        <div class="trending-now-card">
-                            <img src="images/the-fault-in-our-paws.png" alt="the-fault-in-our-paws" class="trending-now-img">
-                        </div>
-                        <div class="trending-now-card">
-                            <img src="images/how-to-lose-a-human-in-10-days.png" alt="how-to-lose-a-human-in-10-days" class="trending-now-img">
-                        </div>
-                        <div class="trending-now-card">
-                            <img src="images/crazy-rich-cats.png" alt="crazy-rich-cats" class="trending-now-img">
-                        </div>
-                        <div class="trending-now-card">
-                            <img src="images/meowana.png" alt="meowana" class="trending-now-img">
-                        </div>
+
+            <div class="movie-row">
+                <h2 class="movie-row-heading"> Trending Now </h2>
+
+                <div class="movie-row-container">
+                    <div class="movie-card">
+                        <img src="images/catman.png" alt="catman" class="movie-poster">
+                    </div>
+                    <div class="movie-card">
+                        <img src="images/mission-impawsible.png" alt="mission-impawsible" class="movie-poster">
+                    </div>
+                    <div class="movie-card">
+                        <img src="images/the-meowtrix.png" alt="the-meowtrix" class="movie-poster">
+                    </div>
+                    <div class="movie-card">
+                        <img src="images/the-fault-in-our-paws.png" alt="the-fault-in-our-paws" class="movie-poster">
+                    </div>
+                    <div class="movie-card">
+                        <img src="images/how-to-lose-a-human-in-10-days.png" alt="how-to-lose-a-human-in-10-days" class="movie-poster">
+                    </div>
+                    <div class="movie-card">
+                        <img src="images/crazy-rich-cats.png" alt="crazy-rich-cats" class="movie-poster">
+                    </div>
+                    <div class="movie-card">
+                        <img src="images/meowana.png" alt="meowana" class="movie-poster">
                     </div>
                 </div>
+            </div>
+
+            <div class="movie-row">
+                <h2 class="movie-row-heading"> Catflix Originals </h2>
+
+                <div class="movie-row-container">
+                    <div class="movie-card">
+                        <img src="images/catnip-heist.png" alt="catnip-heist" class="movie-poster">
+                    </div>
+                    <div class="movie-card">
+                        <img src="images/cat-game.png" alt="cat-game" class="movie-poster">
+                    </div>
+                    <div class="movie-card">
+                        <img src="images/to-all-the-tomcats-ive-loved-before.png" alt="to-all-the-tomcats-ive-loved-before" class="movie-poster">
+                    </div>
+                    <div class="movie-card">
+                        <img src="images/murder-mystery.png" alt="murder-mystery" class="movie-poster">
+                    </div>
+                    <div class="movie-card">
+                        <img src="images/kittens-day-out.png" alt="kittens-day-out" class="movie-poster">
+                    </div>
+                    <div class="movie-card">
+                        <img src="images/you.png" alt="you" class="movie-poster">
+                    </div>
+                    <div class="movie-card">
+                        <img src="images/10-things-i-hate-about-humans.png" alt="10-things-i-hate-about-humans" class="movie-poster">
+                    </div>
+                </div>
+            </div>  
+
         </section>
     </main>
 </body>
